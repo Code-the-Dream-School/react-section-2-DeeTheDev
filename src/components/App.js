@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-bootstrap";
 import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,6 +11,7 @@ import Project from "./Project";
 const App = () => {
     return (
         <BrowserRouter>
+            <Image src="/img/deethedev-logo.png" style={{width: 500}} className="d-block mx-auto" alt="Deethedev Logo"/>
             <div className="container rounded">
                 <Header />
                 <Route exact path="/" component={Profile} />
